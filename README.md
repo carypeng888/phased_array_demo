@@ -1,3 +1,31 @@
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/15c3e997-0e62-44f2-90a8-bdc786a2412d" alt="Phased Array Dashboard Preview" width="850">
+  <p><i>Interactive Phased Array Antenna Dashboard</i></p>
+</div>
+----
+# 📡 Phased Array Antenna Pattern Demo
+An interactive 2D phased array antenna pattern simulation tool based on Python. Utilizing `matplotlib`'s animation engine, this program visually demonstrates the far-field radiation characteristics of phased array antennas under beam scanning, parameter tuning, and various amplitude taper (window) functions.
+## ✨ Main Features
+- **Dynamic Beam Scanning**: Automatically simulates the continuous scanning process of the antenna's main beam in space (Theta and Phi directions).
+- **Multi-dimensional Visualization**:
+  - 📊 **E-plane / H-plane Cartesian Plots**: Real-time display of beam shape, mainlobe, and sidelobe distributions.
+  - 🎯 **Polar View**: Displays the E-plane beam pattern in polar coordinates.
+  - 🗺️ **2D Spatial Radar Heatmap**: Uses contour plotting (`contourf`) to render the true 2D spatial radiation energy distribution, simulating a radar scanning screen.
+  - 🌐 **3D Radiation Pattern**: Clicking "Show 3D" pops up an interactive, rotatable 3D radiation surface.
+- **Real-time Interactive Parameter Tuning**:
+  - Supports real-time modification via input boxes at the bottom of the interface: **Number of elements (M/N)**, **Element spacing (dy/dz)**, and **Operating frequency (f0)**.
+  - The wavelength (\(\lambda\)) and radiation pattern are redrawn immediately upon parameter modification.
+- **13 Taper (Amplitude Weighting) Window Functions**:
+  - Built-in support for 13 window functions including Uniform, Hamming, Hann, Blackman, Kaiser, and Chebyshev.
+  - Used to analyze the impact of different weighting methods on the **Half-Power Beamwidth (HPBW)** and **Sidelobe Level (SLL)**.
+- **Smart Grating Lobe Warning**:
+  - Monitors in real-time whether the element spacing is greater than half a wavelength (\(\lambda/2\)). If the condition is not met, a red warning pops up on the interface indicating the presence of grating lobes.
+- **Real-time Performance Metrics Calculation**:
+  - Dynamically calculates and plots the curves of HPBW and the first SLL as they vary with the scan angle.
+
+## 🛠️ Requirements
+------
+
 # 📡 Phased Array Antenna Pattern Demo (相控阵天线方向图动态仿真)
 
 这是一个基于 Python 的交互式二维相控阵天线方向图仿真工具。该程序利用 `matplotlib` 的动画引擎，直观地展示了相控阵天线在波束扫描、参数调节以及不同加权窗函数下的远场辐射特性。
@@ -27,32 +55,7 @@
 
 ```bash
 pip install numpy matplotlib scipy
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/15c3e997-0e62-44f2-90a8-bdc786a2412d" alt="Phased Array Dashboard Preview" width="850">
-  <p><i>Interactive Phased Array Antenna Dashboard</i></p>
-</div>
-----
-# 📡 Phased Array Antenna Pattern Demo
-An interactive 2D phased array antenna pattern simulation tool based on Python. Utilizing `matplotlib`'s animation engine, this program visually demonstrates the far-field radiation characteristics of phased array antennas under beam scanning, parameter tuning, and various amplitude taper (window) functions.
-## ✨ Main Features
-- **Dynamic Beam Scanning**: Automatically simulates the continuous scanning process of the antenna's main beam in space (Theta and Phi directions).
-- **Multi-dimensional Visualization**:
-  - 📊 **E-plane / H-plane Cartesian Plots**: Real-time display of beam shape, mainlobe, and sidelobe distributions.
-  - 🎯 **Polar View**: Displays the E-plane beam pattern in polar coordinates.
-  - 🗺️ **2D Spatial Radar Heatmap**: Uses contour plotting (`contourf`) to render the true 2D spatial radiation energy distribution, simulating a radar scanning screen.
-  - 🌐 **3D Radiation Pattern**: Clicking "Show 3D" pops up an interactive, rotatable 3D radiation surface.
-- **Real-time Interactive Parameter Tuning**:
-  - Supports real-time modification via input boxes at the bottom of the interface: **Number of elements (M/N)**, **Element spacing (dy/dz)**, and **Operating frequency (f0)**.
-  - The wavelength (\(\lambda\)) and radiation pattern are redrawn immediately upon parameter modification.
-- **13 Taper (Amplitude Weighting) Window Functions**:
-  - Built-in support for 13 window functions including Uniform, Hamming, Hann, Blackman, Kaiser, and Chebyshev.
-  - Used to analyze the impact of different weighting methods on the **Half-Power Beamwidth (HPBW)** and **Sidelobe Level (SLL)**.
-- **Smart Grating Lobe Warning**:
-  - Monitors in real-time whether the element spacing is greater than half a wavelength (\(\lambda/2\)). If the condition is not met, a red warning pops up on the interface indicating the presence of grating lobes.
-- **Real-time Performance Metrics Calculation**:
-  - Dynamically calculates and plots the curves of HPBW and the first SLL as they vary with the scan angle.
 
-## 🛠️ Requirements
 
 Running this code requires a Python 3.7+ environment. Please ensure the following dependencies are installed:
 
