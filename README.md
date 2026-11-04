@@ -27,7 +27,10 @@
 
 ```bash
 pip install numpy matplotlib scipy
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/15c3e997-0e62-44f2-90a8-bdc786a2412d" alt="Phased Array Dashboard Preview" width="850">
+  <p><i>Interactive Phased Array Antenna Dashboard</i></p>
+</div>
 ----
 # 📡 Phased Array Antenna Pattern Demo
 An interactive 2D phased array antenna pattern simulation tool based on Python. Utilizing `matplotlib`'s animation engine, this program visually demonstrates the far-field radiation characteristics of phased array antennas under beam scanning, parameter tuning, and various amplitude taper (window) functions.
