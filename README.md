@@ -2,7 +2,9 @@
   <img src="https://github.com/user-attachments/assets/15c3e997-0e62-44f2-90a8-bdc786a2412d" alt="Phased Array Dashboard Preview" width="850">
   <p><i>Interactive Phased Array Antenna Dashboard</i></p>
 </div>
+
 ----
+
 # 📡 Phased Array Antenna Pattern Demo
 An interactive 2D phased array antenna pattern simulation tool based on Python. Utilizing `matplotlib`'s animation engine, this program visually demonstrates the far-field radiation characteristics of phased array antennas under beam scanning, parameter tuning, and various amplitude taper (window) functions.
 ## ✨ Main Features
@@ -23,9 +25,12 @@ An interactive 2D phased array antenna pattern simulation tool based on Python. 
 - **Real-time Performance Metrics Calculation**:
   - Dynamically calculates and plots the curves of HPBW and the first SLL as they vary with the scan angle.
 
+  ```bash
+pip install numpy matplotlib scipy
+
+
 ## 🛠️ Requirements
 ------
-
 # 📡 Phased Array Antenna Pattern Demo (相控阵天线方向图动态仿真)
 
 这是一个基于 Python 的交互式二维相控阵天线方向图仿真工具。该程序利用 `matplotlib` 的动画引擎，直观地展示了相控阵天线在波束扫描、参数调节以及不同加权窗函数下的远场辐射特性。
